@@ -1,2 +1,7 @@
-# Intelligent-Objects-Workshop
-Intelligent Objects Workshop @NewLab
+#      _   ___ ___   _      ___  ___   ___ ___ ___ ___ ___ _____ 
+#     /_\ | _ | __| /_\    / _ \| __| | __| __| __| __/ __|_   _|
+#    / _ \|   | _| / _ \  | (_) | _|  | _|| _|| _|| _| (__  | |  
+#   /_/ \_|_|_|___/_/ \_\  \___/|_|   |___|_| |_| |___\___| |_|  
+#
+#    I N T E L L I G E N T    O B J E C T S    W O R K S H O P
+#
