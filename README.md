@@ -94,13 +94,6 @@ sudo apt-cache search mosquitto
 sudo apt-get install mosquitto python-mosquitto mosquitto-clients
 </pre>
 
-#####Test via command line
-<pre>
-mosquitto_sub -d -t hello/world
-mosquitto_pub -d -t hello/world -m "Hello World"
-mosquitto_sub -h YOUR_HOST_IP_ADDRESS -d -t hello/world
-</pre>
-
 #####Open port 1883
 <pre>
 sudo iptables -A INPUT -p tcp -m tcp --dport 1883 -j ACCEPT
@@ -114,7 +107,29 @@ sudo pip install paho-mqtt
 
 <br/>
 
-###Publishing Messages
 
-mosquitto_pub -h xx.xx.xxx.xxx -t IoT -m "Testing 123"
+##Messages Examples
+#####Testing via command line
+<pre>
+mosquitto_sub -d -t hello/world
+mosquitto_pub -d -t hello/world -m "Hello World"
+mosquitto_sub -h YOUR_HOST_IP_ADDRESS -d -t hello/world
+</pre>
+
+<br/>
+###breaking it down....
+This example subscribes to the channel 'topic'. 
+<pre>
+mosquitto_sub -d -t topic
+</pre>
+
+This one subscribes to the channel 'AoE' and publishes the message "Testing 123"
+<pre>
+mosquitto_pub -h xx.xx.xxx.xxx -t AoE -m "Testing 123"
+</pre>
+
+This one subscribes to the channel 'NewLab' and publishes the message "Hi Bruno"
+
+<pre>
 mosquitto_pub -h xx.xx.xxx.xxx -t topic -m "Hi Bruno"
+</pre>
