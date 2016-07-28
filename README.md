@@ -4,6 +4,112 @@
 #    / _ \|   | _| / _ \  | (_) | _|  | _|| _|| _|| _| (__  | |  
 #   /_/ \_|_|_|___/_/ \_\  \___/|_|   |___|_| |_| |___\___| |_|  
 #
-#    I N T E L L I G E N T    O B J E C T S    W O R K S H O P
+#    	   		I N T E L L I G E N T    O B J E C T S
 #
 </pre>
+
+
+<br/>
+###.. -. - . .-.. .-.. .. --. . -. - / --- -... .--- . -.-. - ...
+###### This is beyond internet of things. What makes objects intelligent? This workshop is about human and machine communuication and thoughts.
+
+
+<br/>
+#Build Guide
+* A network of Raspberry Pi, Sensors and Humans.
+
+<br/>
+
+##Hardware
+ * Buttons, represents human input. Overrides
+ * Photocell, represents sensing, environmental input. Uncontrollable; we must design our system in a way to account for variability.
+ * Network & Protocol, communication between the nodes. Humans are also a node.
+ * The language we choose. What protocol can humans and machines both understand.
+	- Moorse Code
+	- Light
+
+
+<br/>
+
+####Led Setup
+* 1 LED
+* 220ohm Resistor
+* Wires
+
+![LED YO!](http://i.imgur.com/71mpq7j.png)
+
+<br/>
+####Photocell Setup
+* 1 LED
+* 10k Resistor
+* Wires
+
+![PHOTOCELL](http://i.imgur.com/Ii6erm6.png)
+
+<br/>
+<br/>
+
+##Software
+###Installating MQTT on OSX
+##### 1. Install MQTT
+<pre>
+pip install paho-mqtt
+</pre>
+
+##### 2. Run as a virtual environment.
+<pre>
+virtualenv paho-mqtt
+</pre>
+
+##### 3. Active and install.
+<pre>
+source paho-mqtt/bin/activate
+brew install mosquitto
+</pre>
+
+##### 4. Send a message!
+<pre>
+mosquitto_sub -h xx.xx.xxx.xxx -t topic
+</pre>
+
+<br/>
+
+###Installing MQTT on Raspberry Pi
+
+#####Do a bunch of commands.
+<pre>
+wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
+sudo apt-key add mosquitto-repo.gpg.key
+cd /etc/apt/sources.list.d/
+sudo wget http://repo.mosquitto.org/debian/mosquitto-wheezy.list
+sudo apt-cache search mosquitto
+sudo apt-get install mosquitto python-mosquitto mosquitto-clients
+</pre>
+
+#####Test via command line
+<pre>
+mosquitto_sub -d -t hello/world
+mosquitto_pub -d -t hello/world -m "Hello World"
+mosquitto_sub -h YOUR_HOST_IP_ADDRESS -d -t hello/world
+</pre>
+
+#####Open port 1883
+<pre>
+sudo iptables -A INPUT -p tcp -m tcp --dport 1883 -j ACCEPT
+</pre>
+
+##### Use MQTT in a python script
+<pre>
+sudo apt-get install python-pip
+sudo pip install paho-mqtt
+</pre>
+
+<br/>
+
+###Publishing Messages
+
+mosquitto_pub -h xx.xx.xxx.xxx -t IoT -m "Testing 123"
+mosquitto_pub -h xx.xx.xxx.xxx -t topic -m "Hi Bruno"
+
+###Python Source
+https://www.dropbox.com/s/6wmmt4rwpwf9fzr/mqtt-example.py?dl=0
