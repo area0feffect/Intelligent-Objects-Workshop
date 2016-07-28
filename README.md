@@ -39,14 +39,6 @@
 ![Led Yo!](http://i.imgur.com/71mpq7j.png)
 
 <br/>
-####Photocell Setup
-* 1 LED
-* 10k Resistor
-* Wires
-
-![Photocell](http://i.imgur.com/Ii6erm6.png)
-
-<br/>
 ####A Button!!
 * 1 LED
 * 10k Resistor
