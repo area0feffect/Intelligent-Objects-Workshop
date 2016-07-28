@@ -21,7 +21,7 @@
 <br/>
 
 ##Hardware
- * Buttons, represents human input. Overrides
+ * Buttons, represents human input. Overrides. Lets say you have an intelligent system, but it's malfunctioning. The human element is always there.
  * Photocell, represents sensing, environmental input. Uncontrollable; we must design our system in a way to account for variability.
  * Network & Protocol, communication between the nodes. Humans are also a node.
  * The language we choose. What protocol can humans and machines both understand.
@@ -36,7 +36,7 @@
 * 220ohm Resistor
 * Wires
 
-![LED YO!](http://i.imgur.com/71mpq7j.png)
+![Led Yo!](http://i.imgur.com/71mpq7j.png)
 
 <br/>
 ####Photocell Setup
@@ -44,7 +44,15 @@
 * 10k Resistor
 * Wires
 
-![PHOTOCELL](http://i.imgur.com/Ii6erm6.png)
+![Photocell](http://i.imgur.com/Ii6erm6.png)
+
+<br/>
+####A Button!!
+* 1 LED
+* 10k Resistor
+* Wires
+
+![Button](http://i.imgur.com/8ifGKat.png)
 
 <br/>
 <br/>
@@ -110,6 +118,3 @@ sudo pip install paho-mqtt
 
 mosquitto_pub -h xx.xx.xxx.xxx -t IoT -m "Testing 123"
 mosquitto_pub -h xx.xx.xxx.xxx -t topic -m "Hi Bruno"
-
-###Python Source
-https://www.dropbox.com/s/6wmmt4rwpwf9fzr/mqtt-example.py?dl=0
