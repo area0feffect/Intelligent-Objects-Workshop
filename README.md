@@ -11,7 +11,7 @@
 
 <br/>
 ###.. -. - . .-.. .-.. .. --. . -. - / --- -... .--- . -.-. - ...
-###### What is beyond the internet of things? What makes things intelligent? What are things? This workshop is about the relationship between humans, machines and their ways of communication.
+###### This workshop is about the relationship between humans, machines and their ways of communication. What is beyond the internet of things? What makes things intelligent?
 
 ######We'll be mapping and building out our own networks of Raspberry Pi and establishing a custom messaging protocol between them. Humans are a key component and will facilitate the process 
 
