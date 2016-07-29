@@ -19,17 +19,15 @@
 #Build Guide
 * Connected devices involve a lot of moving pieces and can get pretty complex. Micro-controllers, power, coding, servers, servos and more. We will focus on understanding the concepts behind interactivity, electronics, basic networking and messaging.
 
-*We'll be building out a simple network of nodes and establishing a custom messaging protocol between them.
+* We'll be building out a simple network of nodes and establishing a custom messaging protocol between them.
 
 <br/>
 
 ##Hardware
  * Buttons, represents human input. Overrides. Lets say you have an intelligent system, but it's malfunctioning. The human element is always there.
- * Photocell, represents sensing, environmental input. Uncontrollable; we must design our system in a way to account for variability.
- * Network & Protocol, communication between the nodes. Humans are also a node.
- * The language we choose. What protocol can humans and machines both understand.
-	- Moorse Code
-	- Light
+ * Analog Sensors, represents sensing, environmental input. Uncontrollable; we must design our system in a way to account for variability.
+ * Network & Protocol, communication between nodes on a network. Humans are also cosidered a node.
+ * The languages we choose. What protocols can humans and machines both understand?
 
 
 <br/>
