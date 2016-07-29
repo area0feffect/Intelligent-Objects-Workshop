@@ -4,15 +4,16 @@
 #    / _ \|   | _| / _ \  | (_) | _|  | _|| _|| _|| _| (__  | |  
 #   /_/ \_|_|_|___/_/ \_\  \___/|_|   |___|_| |_| |___\___| |_|  
 #
-#    	   		I N T E L L I G E N T    O B J E C T S
+#    I N T E L L I G E N T    O B J E C T S    W O R K S H O P
 #
 </pre>
 
 
 <br/>
 ###.. -. - . .-.. .-.. .. --. . -. - / --- -... .--- . -.-. - ...
-###### This is beyond internet of things. What makes objects intelligent? This workshop is about human and machine communuication and thoughts.
+###### What is beyond the internet of things? What makes things intelligent? What are things? This workshop is about the relationship between humans, machines and their ways of communication.
 
+######We'll be mapping and building out our own networks of Raspberry Pi and establishing a custom messaging protocol between them. Humans are a key component and will facilitate the process 
 
 <br/>
 #Build Guide
