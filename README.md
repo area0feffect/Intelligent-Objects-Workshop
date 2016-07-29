@@ -13,11 +13,13 @@
 ###.. -. - . .-.. .-.. .. --. . -. - / --- -... .--- . -.-. - ...
 ###### This workshop is about the relationship between humans, machines and their ways of communication. What is beyond the internet of things? What makes things intelligent?
 
-######We'll be mapping and building out our own networks of Raspberry Pi and establishing a custom messaging protocol between them. Humans are a key component and will facilitate the process 
+
 
 <br/>
 #Build Guide
-* A network of Raspberry Pi, Sensors and Humans.
+* Connected devices involve a lot of moving pieces and can get pretty complex. Micro-controllers, power, coding, servers, servos and more. We will focus on understanding the concepts behind interactivity, electronics, basic networking and messaging.
+
+*We'll be building out a simple network of nodes and establishing a custom messaging protocol between them.
 
 <br/>
 
