@@ -17,7 +17,7 @@
 
 <br/>
 #Build Guide
-* Connected devices involve a lot of moving pieces and can get pretty complex. Micro-controllers, power, coding, servers, servos and more. We will focus on understanding the concepts behind interactivity, electronics, basic networking and messaging.
+* Connected devices involve a lot of moving pieces and can quickly become complex. On the technical level; they consist of micro-controllers, power, coding, servers, servos and more. We will focus on understanding the concepts behind these topics and design for interactivity, electronics, basic networking and messaging.
 
 * We'll be building out a simple network of nodes and establishing a custom messaging protocol between them.
 
